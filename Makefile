@@ -40,7 +40,7 @@ install: ${LIB} rngod.pc
 	cp librngod.so.0 /usr/local/lib/
 	ln -sf /usr/local/lib/librngod.so.0 /usr/local/lib/librngod.so
 	mkdir -p /usr/local/lib/pkgconfig
-	cp rng.pc /usr/local/lib/pkgconfig
+	cp rngod.pc /usr/local/lib/pkgconfig
 
 check: rng.a ${TESTS}
 	${CC} ${CFLAGS} -o check ${TESTS} rng.a ${LDFLAGS} -lcheck
